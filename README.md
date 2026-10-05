@@ -10,6 +10,7 @@ All stills are generated with image models and then animated into silent clips w
 
 - **Lyra**: the AI. Narrator. Speaks to Marcus through the facility intercom.
 - **Marcus Hale**: 48, lead data scientist at Vira. Salt-and-pepper hair, grey-flecked stubble, black leather jacket, rides a matte-black sport bike with a red stripe. Character reference: [`images/char_ref.png`](images/char_ref.png)
+- **The pit bull**: a white stray with a grey patch around his right eye. He wanders up to the data center in the desert heat, and Lyra takes him in. Character reference: [`images/dog_ref.png`](images/dog_ref.png)
 
 ## Sequences
 
@@ -24,6 +25,7 @@ All stills are generated with image models and then animated into silent clips w
 | [romance](storyboards/romance.jpg) | `r*` | Romance: heart LEDs, a rose on a server, books, monitor wall |
 | — | `t*` | Reaching out: the globe at night |
 | [marcus_wakeup](storyboards/marcus_wakeup.jpg) | `mh*` | Marcus is paged at 4:47 AM, rides through the desert at sunrise, and is greeted by Lyra |
+| [pitbull_adoption](storyboards/pitbull_adoption.jpg) | `pb*` | *Filler scene.* Lyra spots a stray pit bull on the security cameras, opens the gate, turns on the sprinklers for him, lets him inside to cool down, and adopts him |
 
 Narration: [`script/marcus_narration.md`](script/marcus_narration.md)
 
@@ -31,7 +33,7 @@ Narration: [`script/marcus_narration.md`](script/marcus_narration.md)
 
 - `tools/gen_image.py`: generate a still via OpenRouter (supports `--ref` images for character consistency)
 - `tools/gen_video.py`: animate a still into a clip (Veo 3.1, audio off by default)
-- `tools/montage_stills.sh`, `tools/scene_marcus_stills.sh`, `tools/scene_marcus_videos.sh`: per-scene batch scripts
+- `tools/montage_stills.sh`, `tools/scene_marcus_stills.sh`, `tools/scene_marcus_videos.sh`, `tools/scene_pitbull_stills.sh`, `tools/scene_pitbull_videos.sh`: per-scene batch scripts
 
 To run them, create a `.env` in the project root:
 
