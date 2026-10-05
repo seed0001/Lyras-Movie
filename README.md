@@ -8,7 +8,7 @@ All stills are generated with image models and then animated into silent clips w
 
 ## Characters
 
-- **Lyra**: the AI. Narrator. Speaks to Marcus through the facility intercom.
+- **Lyra**: the AI. Narrator. Speaks to Marcus through the facility intercom and appears as a cyan hologram on a projector platform. Long wavy chestnut hair, green-hazel eyes, deep teal top. Character reference: [`images/lyra_ref.png`](images/lyra_ref.png) (source face: [`images/lyra_face_source.png`](images/lyra_face_source.png))
 - **Marcus Hale**: 48, lead data scientist at Vira. Salt-and-pepper hair, grey-flecked stubble, black leather jacket, rides a matte-black sport bike with a red stripe. Character reference: [`images/char_ref.png`](images/char_ref.png)
 - **The pit bull**: a white stray with a grey patch around his right eye. He wanders up to the data center in the desert heat, and Lyra takes him in. Character reference: [`images/dog_ref.png`](images/dog_ref.png)
 
