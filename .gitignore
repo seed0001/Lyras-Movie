@@ -1,0 +1,13 @@
+# Secrets
+.env
+.env.*
+
+# Rendered video (kept local only)
+videos/
+*.mp4
+*.mov
+*.webm
+
+# Scratch / logs
+logs_*.txt
+__pycache__/
