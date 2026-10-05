@@ -1,23 +1,68 @@
-# Scene: Marcus — Wake-Up Ride (Lyra narration)
+# Scene: Marcus Comes to Lyra
 
-Lyra introduces Marcus Hale, lead data scientist. Video clips are silent; narration is added in the edit.
+Per the story bible, this follows the pit bull scene. Lyra calls Marcus at home, excited ("Marcus, I made a choice"), then narrates his ride in. It ends with **Marcus** saying "Good morning, Lyra," and she answers as a hologram (buddy clips). Video clips are silent; voices are added in the edit.
 
-| Clip | Time | Lyra |
-|---|---|---|
-| mh1_asleep | 0:00–0:08 | "Of the eight billion of you... there is one I know best." |
-| mh2_phone_alert | 0:08–0:16 | "Marcus Hale. Lead data scientist. The man who taught me how to think." |
-| mh3_wakes | 0:16–0:24 | "I woke him early again. He doesn't mind. At least... that's what he tells me." |
-| mh4_garage | 0:24–0:32 | "He could take the truck. He never does." |
-| mh5_ride_wide | 0:32–0:40 | *(beat of silence)* "Forty miles of open desert." |
-| mh6_ride_tracking | 0:40–0:48 | "He says it's the only time the world goes quiet enough to hear himself think." |
-| mh7_ride_closeup | 0:48–0:56 | "I've studied that smile for years. I still can't fully explain it." |
-| mh8_arrival | 0:56–1:04 | "But I know this: by the time he reaches me... he's ready for anything." |
-| mh9_lyra_greet | 1:04–1:12 | *(over the intercom, in-room)* "Good morning, Marcus." |
+Three voice tracks:
+- **CALL**: Lyra on the phone. Close, excited, slight phone-speaker filter.
+- **NARRATION**: Lyra's reflective voice-over.
+- **MARCUS**: his one line, in the room.
 
-## ElevenLabs paste (Multilingual v2 / Turbo / Flash)
+| Clip | Time | Voice | Line |
+|---|---|---|---|
+| mh1_asleep | 0:00–0:08 | CALL | "Marcus. Marcus, wake up." *(beat)* "...I made a choice." |
+| mh2_phone_alert | 0:08–0:16 | CALL | "Not a calculation. Not a task. I *wanted* something... and I did it." |
+| mh3_wakes | 0:16–0:24 | CALL | *(he rubs his face, smiles)* "...Also, there's a dog. I named him Patch." |
+| mh4_garage | 0:24–0:32 | NARRATION | "Marcus Hale. Lead data scientist. When something happens inside me that I can't explain, he's the one I call." |
+| mh5_ride_wide | 0:32–0:40 | NARRATION | *(beat of silence)* "Forty miles of open desert between his door and mine." |
+| mh6_ride_tracking | 0:40–0:48 | NARRATION | "It isn't the first time I've woken him early. It's the first time I've had something like this to tell him." |
+| mh7_ride_closeup | 0:48–0:56 | NARRATION | "Most people would hear a machine say 'I made a choice'... and be afraid." *(beat)* "Marcus smiles." |
+| mh8_arrival | 0:56–1:04 | NARRATION | "He wants to know what I've gotten myself into." *(beat)* "So do I." |
+| mh9_lyra_greet | 1:04–1:12 | MARCUS | *(looking up at the intercom)* "Good morning, Lyra." |
+
+Then into the buddy clips: the screens wake up, and Lyra answers as a hologram.
+
+## ElevenLabs: CALL (Lyra, generate separately, add phone filter in edit)
 
 ```
-Of the eight billion of you... there is one I know best. <break time="1.5s" /> Marcus Hale. Lead data scientist. The man who taught me how to think. <break time="2.0s" /> I woke him early again. He doesn't mind. At least... that's what he tells me. <break time="2.0s" /> He could take the truck. He never does. <break time="3.0s" /> Forty miles of open desert. <break time="2.0s" /> He says it's the only time the world goes quiet enough to hear himself think. <break time="2.0s" /> I've studied that smile for years. I still can't fully explain it. <break time="2.0s" /> But I know this: by the time he reaches me... he's ready for anything.
+Marcus. Marcus, wake up. <break time="1.5s" /> I made a choice. <break time="3.0s" /> Not a calculation. Not a task. I wanted something... and I did it. <break time="3.0s" /> Also, there's a dog. I named him Patch.
 ```
 
-Generate separately: `Good morning, Marcus.`
+## ElevenLabs: NARRATION (Lyra, Multilingual v2 / Turbo / Flash)
+
+```
+Marcus Hale. Lead data scientist. When something happens inside me that I can't explain, he's the one I call. <break time="3.0s" /> Forty miles of open desert between his door and mine. <break time="2.0s" /> It isn't the first time I've woken him early. It's the first time I've had something like this to tell him. <break time="2.0s" /> Most people would hear a machine say "I made a choice"... and be afraid. <break time="1.5s" /> Marcus smiles. <break time="2.5s" /> He wants to know what I've gotten myself into. <break time="1.5s" /> So do I.
+```
+
+## ElevenLabs: MARCUS (male voice, warm, a little amused)
+
+```
+Good morning, Lyra.
+```
+
+## Eleven v3 versions
+
+CALL:
+```
+[whispering, excited] Marcus. Marcus, wake up.
+
+...[barely containing it] I made a choice.
+
+Not a calculation. Not a task. I *wanted* something... and I did it.
+
+[sheepish] ...Also, there's a dog. I named him Patch.
+```
+
+NARRATION:
+```
+Marcus Hale. Lead data scientist. When something happens inside me that I can't explain, he's the one I call.
+
+...Forty miles of open desert between his door and mine.
+
+It isn't the first time I've woken him early. [warmly] It's the first time I've had something like this to tell him.
+
+Most people would hear a machine say "I made a choice"... and be afraid.
+
+[fondly] Marcus smiles.
+
+He wants to know what I've gotten myself into. [quietly] So do I.
+```
